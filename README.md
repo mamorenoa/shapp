@@ -1,3 +1,3 @@
 # shapp
 
-<img src="./art/gifmarvel.gif?raw=true">
+<img src="art/marvel.gif?raw=true">
