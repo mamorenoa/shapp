@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.mam.shapp"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext.supportVersion = '25.3.0'
+ext.retrofitVersion = '2.1.0'
+ext.okhttpVersion = '3.5.0'
+ext.espressoVersion = '2.2.2'
+ext.daggerVersion = '2.8'
+ext.picassoVersion = '2.5.2'
+ext.materialDialogsVersion = '0.9.0.1'
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Support
+    compile "com.android.support:appcompat-v7:$supportVersion"
+    compile "com.android.support:design:$supportVersion"
+    compile "com.android.support:cardview-v7:$supportVersion"
+    compile "com.android.support:recyclerview-v7:$supportVersion"
+    androidTestCompile "com.android.support:support-annotations:$supportVersion"
+
+    //Dagger
+    apt "com.google.dagger:dagger-compiler:$daggerVersion"
+    androidTestApt "com.google.dagger:dagger-compiler:$daggerVersion"
+    compile "com.google.dagger:dagger:$daggerVersion"
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+
+    //ButterKnife
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    //Retrofit OkHttp
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    compile "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    compile "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+
+    //Picasso
+    compile "com.squareup.picasso:picasso:$picassoVersion"
+
+    //Material dialogs
+    compile "com.afollestad.material-dialogs:core:$materialDialogsVersion"
+    compile "com.afollestad.material-dialogs:commons:$materialDialogsVersion"
+
+    /*testCompile 'junit:junit:4.12'
+    androidTestCompile 'org.khronos:opengl-api:gl1.1-android-2.1_r1'
+    testCompile 'org.khronos:opengl-api:gl1.1-android-2.1_r1'
+    androidTestCompile "com.github.crittercism.dexmaker:dexmaker-parent:f8e7c23e4172af8767758c99c9165dd2bd4f0e7f"
+    androidTestCompile "com.github.crittercism.dexmaker:dexmaker-dx:f8e7c23e4172af8767758c99c9165dd2bd4f0e7f"
+    androidTestCompile "com.github.crittercism.dexmaker:dexmaker:f8e7c23e4172af8767758c99c9165dd2bd4f0e7f"
+    androidTestCompile("com.github.crittercism.dexmaker:dexmaker-mockito:f8e7c23e4172af8767758c99c9165dd2bd4f0e7f")
+    androidTestCompile 'com.jakewharton.espresso:okhttp3-idling-resource:1.0.0'
+    androidTestCompile("com.android.support.test:runner:0.5") {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile "com.android.support.test:rules:0.5"
+    testCompile 'org.robolectric:robolectric:3.2'
+    testCompile 'com.github.fabioCollini:DaggerMock:0.6.4'
+    androidTestCompile 'com.github.fabioCollini:DaggerMock:0.6.4'
+    androidTestCompile "com.android.support.test.espresso:espresso-intents:$espressoVersion"
+    testCompile "com.android.support.test.espresso:espresso-idling-resource:$espressoVersion"
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVersion") {
+        exclude group: 'com.android.support'
+    }
+    testCompile 'commons-io:commons-io:2.4'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+    androidTestCompile 'org.mockito:mockito-core:1.10.19'
+    testCompile "com.squareup.okhttp3:mockwebserver:3.5.0"
+    androidTestCompile "com.squareup.okhttp3:mockwebserver:3.5.0"*/
+}

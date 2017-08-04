@@ -1,0 +1,47 @@
+<resources>
+
+
+    <!--Colors -->
+    <style name="TextView.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="TextView.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--Colors + Sizes -->
+    <style name="TextView.Gray.Micro">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <style name="TextView.Gray.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="TextView.Gray.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="TextView.Gray.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="TextView.Gray.XLarge">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+
+    <style name="TextView.Gray.XXLarge">
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
+    </style>
+
+    <!--Colors + Size + Style -->
+    <style name="TextView.Gray.XLarge.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Gray.XXLarge.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

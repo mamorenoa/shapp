@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_padding_size_small">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardHeroe"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/cardview_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_size_small">
+
+            <ImageView
+                android:id="@+id/imageHero"
+                android:layout_width="@dimen/square_medium"
+                android:layout_height="@dimen/square_medium"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:transitionName="hero"
+                tools:src="@drawable/marvelplaceholder" />
+
+            <TextView
+                android:id="@+id/textNameValue"
+                style="@style/TextView.Gray.XLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageHero"
+                tools:text="Spiderman" />
+
+            <TextView
+                android:id="@+id/textRealNameValue"
+                style="@style/TextView.Gray.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNameValue"
+                android:layout_toRightOf="@+id/imageHero"
+                tools:text="Peter Benjamin Parker" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

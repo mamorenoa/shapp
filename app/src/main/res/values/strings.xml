@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SuperHero!</string>
+    <string name="common_connection_error_dialog">Error de conexión</string>
+    <string name="common_default_error_dialog">Error genérico</string>
+    <string name="common_continue_dialog">Ok</string>
+    <string name="common_info_dialog">Info</string>
+    <string name="hero_detail_real_name">Real name</string>
+    <string name="hero__detail_heigh">Heigh</string>
+    <string name="hero__detail_power">Power</string>
+    <string name="hero__detail_abilities">Abilities</string>
+    <string name="hero__detail_groups">Groups</string>
+</resources>
